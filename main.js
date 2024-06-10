@@ -18,7 +18,7 @@ $(document).ready(function(){
         
     $('.form-1').on('submit', function(e) {
         e.preventDefault();
-        alert('Para marcar algum item da lista, basta clicar no container no item. E para remover-lo de sua lista, basta clicar na lixeira ao lado.')
+        alert('Para marcar algum item da lista, basta clicar no container do item. E para remover-lo de sua lista, basta clicar na lixeira ao lado.')
     });
     
     
