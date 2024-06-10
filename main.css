@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+    background-color: rgb(28, 29, 32);
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+#container-preloader {
+    letter-spacing: 2px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 100px auto;
+    background-color: #ffffffb4;
+    border-radius: 10px;
+    color: #332c2c;
+}
+
+#container-preloader h1 {
+    margin: 0 auto;
+}
+
+#container-preloader input{
+    box-shadow:  1px 1px 3px #090808, -1px -1px 3px #0c0a0a;
+    color:#0c0a0a;
+    outline: none;
+}
+
+#container {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: auto;
+    display: none;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header p{
+    font-weight: bolder;
+    padding: 5px;
+}
+
+form {
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+
+}
+
+form input{
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+    border-color: rgba(72, 72, 74, 0.834);
+    background: transparent;
+    box-shadow:  1px 1px 3px #ffffff1e, -1px -1px 3px #ffffff1f;
+    letter-spacing: 2px;
+    outline: none;
+    
+}
+
+form button {
+    padding: 8px;
+    letter-spacing: 2px;
+    background-color: #332c2c;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #443d3d;
+    cursor: pointer;
+}
+
+.lista-container {
+    border-top: 2px solid #fff;
+    padding: 50px;
+}
+
+.container-iten  {
+    padding: 5px;
+    max-width: 550px;
+    width: 100%;
+    margin-left: 10px;
+    list-style: none;
+    display: flex;
+    counter-increment: item;
+    position: relative;
+}
+
+.container-iten:hover {
+    background-color: #0f0c0c52;
+    border-radius: 4px;
+}
+
+
+.container-iten::before {
+    content: counter(item) ". ";
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #ffffff79;
+}
+
+.btn-remove{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.container-iten:hover .btn-remove {
+    display: block;
+}
+
+ol {
+    counter-reset: item;
+}
+
+.btn-remove img {
+    cursor: pointer;
+}
+
+.btn-remove img {
+    height: 25px; 
+}

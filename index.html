@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List system </title>
+        <link rel="stylesheet" href="./main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container-preloader">
+            <header>
+                <h1>o que pretende fazer hoje?</h1>
+            </header>
+            <form class="form-1">
+                <input id="val-list" type="text"  placeholder="Escreva aqui">
+                <button class="btn-comecar" type="submit">Começar</button>
+            </form>
+            <p>Ex.: Lista de compras, Lista de convidados, lista de afazeres ou qualquer outra lista que queres. </p>
+        </div>
+        <div id="container">
+            <header>
+                <h1>LIST SYSTEM</h1>
+                <p>2024</p>
+            </header>
+            <form class="form-2">
+                <input id="conteudo-input" type="text" placeholder="Digite algo" required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <div >
+                <ol class="lista-container">
+                    <p class="demo-list">
+                        Adicione algo à sua lista
+                    </p>
+                </ol>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html> 
+
